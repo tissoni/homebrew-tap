@@ -5,13 +5,13 @@
 class Aura < Formula
   desc "Aura - Modern SSH Manager for macOS"
   homepage "https://github.com/tissoni/aura-ssh-manager"
-  version "1.2.0"
+  version "1.3.0"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/tissoni/aura-ssh-manager/releases/download/v1.2.0/aura_1.2.0_darwin_amd64.tar.gz"
-    sha256 "5cc3e2f0fd578bfffb715c36056f6e9703686c46c64a998ea06dc52c00e796ba"
+    url "https://github.com/tissoni/aura-ssh-manager/releases/download/v1.3.0/aura_1.3.0_darwin_amd64.tar.gz"
+    sha256 "93bbb024854e7774a73dffbdc6292bf1c8c62cdfcd2beba6e0bfd876de8cb9d3"
 
     define_method(:install) do
       bin.install "aura"
@@ -19,8 +19,8 @@ class Aura < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/tissoni/aura-ssh-manager/releases/download/v1.2.0/aura_1.2.0_darwin_arm64.tar.gz"
-    sha256 "49bd2d5ef935cc6541a371c4864a70c1dafc044c749a9c9e8b3a1e68d27b8445"
+    url "https://github.com/tissoni/aura-ssh-manager/releases/download/v1.3.0/aura_1.3.0_darwin_arm64.tar.gz"
+    sha256 "8f3265b420500651818da4aa70de890163bd6e97eac368311a530a22bc9b4d3e"
 
     define_method(:install) do
       bin.install "aura"
